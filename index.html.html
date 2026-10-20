@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Leśny Dom – sklep szkoleniowy</title>
+<script>
+/* =========================================================
+   KONFIGURACJA – wpisz swoje identyfikatory i opublikuj plik
+   GA4:     Administracja → Strumienie danych → Identyfikator pomiaru (G-XXXXXXXXXX)
+   Clarity: Settings → Overview → Project ID (np. abcd1234ef)
+   Hotjar:  Site ID (liczba) – opcjonalnie zamiast lub obok Clarity
+   ========================================================= */
+var GA4_ID = "G-XXXXXXXXXX";
+var CLARITY_ID = "";
+var HOTJAR_ID = "";
+</script>
+<script>
+(function () {
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { dataLayer.push(arguments); };
+  if (/^G-[A-Z0-9]{6,}$/.test(GA4_ID) && GA4_ID !== "G-XXXXXXXXXX") {
+    var s = document.createElement("script"); s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA4_ID; document.head.appendChild(s);
+    gtag("js", new Date()); gtag("config", GA4_ID, { send_page_view: false });
+  }
+  if (CLARITY_ID) {
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+      t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", CLARITY_ID);
+  }
+  if (HOTJAR_ID) {
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments); };
+      h._hjSettings = { hjid: Number(HOTJAR_ID), hjsv: 6 };
+      a = o.getElementsByTagName("head")[0]; r = o.createElement("script"); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv; a.appendChild(r);
+    })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+  }
+})();
+</script>
+<style>
+  :root { --red:#c8371a; --ink:#22231f; --muted:#62645c; --bg:#f7f5f0; --card:#ffffff; --line:#e4e0d6; --green:#2f5d50; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: Georgia, "Times New Roman", serif; color:var(--ink); background:var(--bg); }
+  .banner { background:var(--ink); color:#fff; font:14px/1.4 Arial, sans-serif; padding:8px 16px; text-align:center; }
+  header { display:flex; align-items:center; justify-content:space-between; padding:18px 24px; background:var(--card); border-bottom:1px solid var(--line); gap:12px; flex-wrap:wrap; }
+  .logo { font-size:26px; color:var(--green); text-decoration:none; font-weight:bold; letter-spacing:.5px; }
+  nav { display:flex; flex-wrap:wrap; align-items:center; gap:8px 16px; }
+  nav a { font:15px Arial, sans-serif; color:var(--ink); text-decoration:none; }
+  .cartlink { background:var(--green); color:#fff !important; padding:8px 14px; border-radius:20px; white-space:nowrap; }
+  main { max-width:1100px; margin:0 auto; padding:24px 16px 64px; }
+  .hero { background:var(--green); color:#fff; border-radius:12px; padding:36px 28px; margin-bottom:28px; }
+  .hero h1 { margin:0 0 8px; font-size:34px; } .hero p { margin:0; font:17px Arial, sans-serif; opacity:.9; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(230px,1fr)); gap:18px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; overflow:hidden; display:flex; flex-direction:column; }
+  .ph { height:170px; display:flex; align-items:center; justify-content:center; font-size:64px; }
+  .card .body { padding:14px; font-family:Arial, sans-serif; display:flex; flex-direction:column; gap:8px; flex:1; }
+  .card h3 { margin:0; font:bold 16px Arial, sans-serif; } .price { font-weight:bold; font-size:18px; }
+  .btn { display:inline-block; border:0; background:var(--red); color:#fff; padding:11px 18px; border-radius:6px; font:bold 15px Arial, sans-serif; cursor:pointer; text-decoration:none; text-align:center; }
+  .btn.ghost { background:transparent; color:var(--ink); border:1px solid var(--line); }
+  .prod { display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+  .prod .ph { height:360px; border-radius:12px; font-size:120px; }
+  .muted { color:var(--muted); font-family:Arial, sans-serif; font-size:14px; }
+  .box { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:18px; font-family:Arial, sans-serif; }
+  table { width:100%; border-collapse:collapse; font-family:Arial, sans-serif; }
+  td, th { padding:10px 6px; border-bottom:1px solid var(--line); text-align:left; }
+  label { display:block; font:14px Arial, sans-serif; margin:10px 0 4px; }
+  input, select { width:100%; padding:10px; border:1px solid #cfcabd; border-radius:6px; font-size:15px; }
+  .err { color:var(--red); font:13px Arial, sans-serif; display:none; } .steps { font:14px Arial, sans-serif; color:var(--muted); margin-bottom:12px; }
+  .spacer { height:520px; } .long p { font-family:Arial, sans-serif; line-height:1.6; }
+  footer { text-align:center; font:13px Arial, sans-serif; color:var(--muted); padding:24px; }
+  @media (max-width:700px) { .prod { grid-template-columns:1fr; } .prod .ph { height:240px; } }
+</style>
+</head>
+<body>
+<div class="banner">Sklep szkoleniowy – fikcyjna firma. Nic tu nie kupisz i nic nie zostanie wysłane. Nie wpisuj prawdziwych danych.</div>
+<header>
+  <a class="logo" href="#/">Leśny Dom</a>
+  <nav><a href="#/kategoria/swiece">Świece</a><a href="#/kategoria/tekstylia">Tekstylia</a><a href="#/kategoria/ceramika">Ceramika</a><a href="#/kategoria/zestawy">Zestawy</a><a class="cartlink" href="#/koszyk">Koszyk (<span id="cc">0</span>)</a></nav>
+</header>
+<main id="app"></main>
+<footer>Leśny Dom · sklep do ćwiczeń z analityki (GA4, Clarity, Hotjar) · dane fikcyjne</footer>
+<script>
+var P = [
+  { id:"LD-SW-01", name:"Zestaw świec sojowych Las (3 szt.)", cat:"swiece", catName:"Świece i zapachy", price:89, e:"🕯️", c:"#e9dfc9" },
+  { id:"LD-SW-02", name:"Świeca sojowa Mech 200 g", cat:"swiece", catName:"Świece i zapachy", price:49, e:"🌿", c:"#dfe8d6" },
+  { id:"LD-TX-01", name:"Pościel lniana Mgła 200x220", cat:"tekstylia", catName:"Tekstylia lniane", price:329, e:"🛏️", c:"#e3e3df" },
+  { id:"LD-TX-02", name:"Ręcznik lniany Waffle 70x140", cat:"tekstylia", catName:"Tekstylia lniane", price:79, e:"🧺", c:"#ece4d8" },
+  { id:"LD-CE-01", name:"Kubek ceramiczny Mech 350 ml", cat:"ceramika", catName:"Ceramika i kuchnia", price:69, e:"☕", c:"#d9e2dc" },
+  { id:"LD-CE-02", name:"Zestaw 4 kubków Las", cat:"ceramika", catName:"Ceramika i kuchnia", price:219, e:"🍵", c:"#e6ddd0" },
+  { id:"LD-DE-01", name:"Wieniec z suszu Jesień", cat:"dekoracje", catName:"Dekoracje", price:129, e:"🍂", c:"#efdcc8" },
+  { id:"LD-ZE-01", name:"Zestaw prezentowy Relaks", cat:"zestawy", catName:"Zestawy prezentowe", price:149, e:"🎁", c:"#f0dcd6" }
+];
+var SHIP = 16.99, FREE_FROM = 149;
+var cart = []; try { cart = JSON.parse(localStorage.getItem("ld_cart") || "[]"); } catch (e) { cart = []; }
+function save() { try { localStorage.setItem("ld_cart", JSON.stringify(cart)); } catch (e) {} document.getElementById("cc").textContent = cart.reduce(function (a, b) { return a + b.q; }, 0); }
+function zl(x) { return x.toFixed(2).replace(".", ",") + " zł"; }
+function item(p, q) { return { item_id:p.id, item_name:p.name, item_category:p.catName, price:p.price, quantity:q || 1 }; }
+function find(id) { return P.filter(function (p) { return p.id === id; })[0]; }
+function sub() { return cart.reduce(function (a, l) { return a + find(l.id).price * l.q; }, 0); }
+function items() { return cart.map(function (l) { return item(find(l.id), l.q); }); }
+function ev(name, params) { if (window.gtag) gtag("event", name, params || {}); }
+function pv(title) { ev("page_view", { page_title: title, page_location: location.href, page_path: location.hash.replace("#", "") || "/" }); }
+var app = document.getElementById("app");
+
+function cardHtml(p) {
+  return '<div class="card"><a href="#/produkt/' + p.id + '" class="ph" style="background:' + p.c + ';text-decoration:none">' + p.e + '</a><div class="body"><h3>' + p.name + '</h3><div class="muted">' + p.catName + '</div><div class="price">' + zl(p.price) + '</div><a class="btn ghost" href="#/produkt/' + p.id + '">Zobacz</a></div></div>';
+}
+function home() {
+  app.innerHTML = '<div class="hero"><h1>Dom pachnący lasem</h1><p>Świece sojowe, len i ręcznie robiona ceramika. Nowa kolekcja jesienna już w sklepie.</p></div><h2>Bestsellery</h2><div class="grid">' + P.map(cardHtml).join("") + '</div>';
+  pv("Strona główna");
+  ev("view_item_list", { item_list_id:"home", item_list_name:"Bestsellery", items:P.map(function (p) { return item(p); }) });
+}
+function category(cat) {
+  var list = P.filter(function (p) { return p.cat === cat; }); var nm = list.length ? list[0].catName : "Kategoria";
+  app.innerHTML = '<h1>' + nm + '</h1><div class="grid">' + list.map(cardHtml).join("") + '</div>';
+  pv("Kategoria – " + nm); ev("view_item_list", { item_list_id:cat, item_list_name:nm, items:list.map(function (p) { return item(p); }) });
+}
+function product(id) {
+  var p = find(id); if (!p) return home();
+  var sizes = p.cat === "tekstylia" ? '<label>Rozmiar</label><select id="size"><option>wybierz rozmiar</option><option>160x200</option><option>200x220</option></select>' : "";
+  app.innerHTML = '<div class="prod"><div class="ph" style="background:' + p.c + '">' + p.e + '</div><div><div class="muted">' + p.catName + '</div><h1>' + p.name + '</h1><div class="price" style="font-size:26px">' + zl(p.price) + '</div>' + sizes +
+    '<p style="margin-top:16px"><button class="btn" id="add">Dodaj do koszyka</button></p><p class="muted">Wysyłka w 1–2 dni robocze.</p></div></div>' +
+    '<div class="long"><h2>Opis</h2><p>Produkt z kolekcji Leśny Dom. Naturalne materiały, krótkie serie, ręczne wykończenie. Każdy egzemplarz może nieznacznie różnić się od zdjęcia.</p>' +
+    '<p>Pielęgnacja: zgodnie z instrukcją na metce. Tabela wymiarów i składu znajduje się poniżej.</p><div class="spacer"></div>' +
+    '<h2>Opinie klientów</h2><p>★★★★★ „Pięknie pachnie, zamówię znowu.” – Anna</p><p>★★★★☆ „Ładne, ale wolałabym szybszą dostawę.” – Marta</p><div class="spacer"></div>' +
+    '<h2 id="dostawa">Dostawa i zwroty</h2><p>Kurier lub paczkomat: ' + zl(SHIP) + '. Darmowa dostawa od ' + FREE_FROM + ' zł. Zwrot do 30 dni.</p></div>';
+  pv("Produkt – " + p.name); ev("view_item", { currency:"PLN", value:p.price, items:[item(p)] });
+  document.getElementById("add").onclick = function () {
+    var l = cart.filter(function (x) { return x.id === id; })[0]; if (l) l.q++; else cart.push({ id:id, q:1 }); save();
+    ev("add_to_cart", { currency:"PLN", value:p.price, items:[item(p)] });
+    this.textContent = "Dodano ✓"; setTimeout(function () { location.hash = "#/koszyk"; }, 500);
+  };
+}
+function shipping() { var s = sub(); return s >= FREE_FROM || s === 0 ? 0 : SHIP; }
+function cartView() {
+  pv("Koszyk"); ev("view_cart", { currency:"PLN", value:sub(), items:items() });
+  if (!cart.length) { app.innerHTML = '<h1>Koszyk</h1><p class="muted">Koszyk jest pusty.</p><a class="btn" href="#/">Wróć do sklepu</a>'; return; }
+  var rows = cart.map(function (l) { var p = find(l.id); return '<tr><td>' + p.e + ' ' + p.name + '</td><td>' + l.q + '</td><td>' + zl(p.price * l.q) + '</td><td><a href="#" data-rm="' + l.id + '">usuń</a></td></tr>'; }).join("");
+  app.innerHTML = '<h1>Koszyk</h1><div class="box"><table><tr><th>Produkt</th><th>Ilość</th><th>Wartość</th><th></th></tr>' + rows +
+    '<tr><td>Dostawa</td><td></td><td>' + zl(shipping()) + '</td><td></td></tr><tr><th>Razem</th><th></th><th>' + zl(sub() + shipping()) + '</th><th></th></tr></table>' +
+    '<label>Kod rabatowy</label><div style="display:flex;gap:8px"><input id="code" placeholder="np. JESIEN10"><button class="btn ghost" id="apply">Zastosuj</button></div><div class="err" id="codeerr">Kod nieprawidłowy</div>' +
+    '<p style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap"><a class="btn" href="#/zamowienie/dane" id="go">Przejdź do kasy</a><a class="btn ghost" href="#/">Kontynuuj zakupy</a></p></div>';
+  document.getElementById("apply").onclick = function () { var v = document.getElementById("code").value; document.getElementById("codeerr").style.display = v === "JESIEN10" ? "none" : "block"; if (v === "JESIEN10") this.textContent = "Kod przyjęty"; };
+  document.getElementById("go").onclick = function () { ev("begin_checkout", { currency:"PLN", value:sub(), items:items() }); };
+  Array.prototype.forEach.call(document.querySelectorAll("[data-rm]"), function (a) { a.onclick = function (e) { e.preventDefault(); var p = find(a.dataset.rm); var l = cart.filter(function (x) { return x.id === p.id; })[0]; ev("remove_from_cart", { currency:"PLN", value:p.price * l.q, items:[item(p, l.q)] }); cart = cart.filter(function (x) { return x.id !== p.id; }); save(); cartView(); }; });
+}
+function stepData() {
+  if (!cart.length) return cartView();
+  pv("Zamówienie – krok 2: dane i dostawa");
+  app.innerHTML = '<div class="steps">Krok 2 z 3 · Dane i dostawa</div><div class="box"><h2>Masz konto?</h2><p><button class="btn ghost">Zaloguj się</button> <button class="btn ghost">Załóż konto</button></p>' +
+    '<label>Imię i nazwisko</label><input id="n" autocomplete="off"><label>Ulica i numer</label><input autocomplete="off"><label>Kod pocztowy (format 00-000)</label><input id="zip" autocomplete="off"><div class="err" id="ziperr">Nieprawidłowy kod pocztowy</div>' +
+    '<label>Miasto</label><input autocomplete="off"><label>Dostawa</label><select id="ship"><option value="Kurier">Kurier – ' + zl(SHIP) + '</option><option value="Paczkomat">Paczkomat – ' + zl(SHIP) + '</option></select>' +
+    '<p style="margin-top:18px"><button class="btn" id="next">Dalej</button></p><div class="spacer" style="height:260px"></div><p class="muted"><a href="#" id="guest">Kontynuuj jako gość</a></p></div>';
+  document.getElementById("next").onclick = function () {
+    var z = document.getElementById("zip").value;
+    if (!/^\d{2}-\d{3}$/.test(z)) { document.getElementById("ziperr").style.display = "block"; return; }
+    ev("add_shipping_info", { currency:"PLN", value:sub(), shipping_tier:document.getElementById("ship").value, items:items() });
+    location.hash = "#/zamowienie/platnosc";
+  };
+  document.getElementById("guest").onclick = function (e) { e.preventDefault(); document.getElementById("n").focus(); };
+}
+function stepPay() {
+  if (!cart.length) return cartView();
+  pv("Zamówienie – krok 3: płatność");
+  app.innerHTML = '<div class="steps">Krok 3 z 3 · Płatność</div><div class="box"><h2>Wybierz płatność</h2><label><input type="radio" name="pay" value="BLIK" checked style="width:auto"> BLIK</label><label><input type="radio" name="pay" value="Karta" style="width:auto"> Karta płatnicza</label><label><input type="radio" name="pay" value="Przelew" style="width:auto"> Szybki przelew</label>' +
+    '<p>Do zapłaty: <b>' + zl(sub() + shipping()) + '</b></p><p class="muted">To sklep szkoleniowy – płatność jest symulowana.</p><p><button class="btn" id="pay">Kupuję i płacę</button></p></div>';
+  document.getElementById("pay").onclick = function () {
+    var method = document.querySelector("input[name=pay]:checked").value;
+    ev("add_payment_info", { currency:"PLN", value:sub(), payment_type:method, items:items() });
+    var tid = "LD-TEST-" + Date.now();
+    ev("purchase", { transaction_id:tid, currency:"PLN", value:sub(), shipping:shipping(), items:items() });
+    cart = []; save(); location.hash = "#/dziekujemy/" + tid;
+  };
+}
+function thanks(tid) { pv("Dziękujemy"); app.innerHTML = '<div class="box"><h1>Dziękujemy!</h1><p>Zamówienie testowe ' + tid + ' zostało zapisane w GA4 jako zakup (dane szkoleniowe).</p><a class="btn" href="#/">Wróć do sklepu</a></div>'; }
+function route() {
+  var h = location.hash.replace(/^#/, "") || "/"; var parts = h.split("/").filter(Boolean);
+  window.scrollTo(0, 0);
+  if (!parts.length) return home();
+  if (parts[0] === "kategoria") return category(parts[1]);
+  if (parts[0] === "produkt") return product(parts[1]);
+  if (parts[0] === "koszyk") return cartView();
+  if (parts[0] === "zamowienie" && parts[1] === "dane") return stepData();
+  if (parts[0] === "zamowienie" && parts[1] === "platnosc") return stepPay();
+  if (parts[0] === "dziekujemy") return thanks(parts[1]);
+  home();
+}
+window.addEventListener("hashchange", route); save(); route();
+</script>
+</body>
+</html>
